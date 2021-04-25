@@ -79,6 +79,7 @@ namespace SpecFlowCalculator.Specs.Steps
         {
             foreach(TableRow row in table.Rows)
             {
+                string nom = row[0];
                 int value = int.Parse(row[0]);
                 this._inputsNumbers.Add(value);
             }
